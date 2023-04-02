@@ -1,0 +1,61 @@
+{% load static %}
+{% csrf_token %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Code Dry Runner</title>
+    <script src="{% static 'ace/ace.js'%}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    
+    <!--  
+    <div class="left">
+       
+        <form  method="post" action="/dryrun" >
+        {% csrf_token%}
+        <textarea class="user-input"> </textarea>
+        <label for="inputcode"></label>
+        <button type="submit" class="btn" id="inputcode">Run</button>
+        </form>
+        <div class="right"></div>
+    </div>
+
+    -->
+
+    <div class="container">
+       
+
+        <div class="user-input">
+            <div class="user-input" id="editorcode">
+               
+             </div>
+             <div class="user-input" id="todisplay"></div>
+             <button class="bttn">Run</button> 
+             <buttion class="bttn-2" id="editbutton">Edit</button>
+        </div>
+
+        <div class="dryrun"><h1 class="heading">Dry Run</h1>
+            <div id="slider_div">
+                <input type="range" id="slider" min="0" max="100" step="10">
+                <button id="prev-button">Previous</button>
+                <button id="next-button">Next</button>
+            </div>
+        </div>
+
+        <div class="output"><h1 class="heading">Output</h1>
+            
+        </div>
+
+    </div>
+   
+    <script src="{% static 'front.js'%}" type="module"></script>
+    <script src="{% static 'visualize.js'%}" type="script"></script>
+</body>
+</html>
+
+
