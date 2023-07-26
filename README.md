@@ -1,3 +1,5 @@
+
+https://github.com/dsgreen2/Python-Code-Dryrunner/assets/106010465/43256a2c-c60d-4ea4-8578-70807ace5408
 # Python-Code-Dryrunner
 Get a step by step dryrun of your python code.
 
@@ -19,3 +21,7 @@ encoder.py - Adds data structure created / updated in the trace.<br>
  
  
  
+
+
+https://github.com/dsgreen2/Python-Code-Dryrunner/assets/106010465/e06ac207-f289-400e-9837-3c90ca0dab2b
+
