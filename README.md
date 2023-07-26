@@ -1,5 +1,4 @@
 
-https://github.com/dsgreen2/Python-Code-Dryrunner/assets/106010465/43256a2c-c60d-4ea4-8578-70807ace5408
 # Python-Code-Dryrunner
 Get a step by step dryrun of your python code.
 
