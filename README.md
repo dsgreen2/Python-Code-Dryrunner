@@ -30,7 +30,7 @@ The main entry point is the following function in logger.py:<br><br>
 
 ans=logger.exec_script_str(code_input,raw_input_json,finalizer_func)<br><br>
 
-Lets look at how the execution trace is produced. Following is the code of exec_script_str in logger.py : <br><br>
+Lets look at how the execution trace is produced. Following is the code of exec_script_str in  DSLogger class of logger.py : <br><br>
 
 def exec_script_str(script_str,raw_input_lst_json,finalizer):
 
@@ -55,6 +55,24 @@ def exec_script_str(script_str,raw_input_lst_json,finalizer):
 
 ```
 
+<br><br>
+
+DSLogger is a derived class of bdb.Bdb , which is the standard python debugger module  .<br> The self.run method is inherited from bdb.Bdb and it executes the contents of script.str.<br>The Bdb debugger has methods user_call , user_return ,  user_exception and user_line which are inherited in DSLogger class. <br><br>
+
+As the user's pgrogram is running , bdb will pause execution at every function call , return , exception and single-line step. It transfers control to the respective handler methds . Since these methods are overridden in DSLogger , we can control how to interpret every line.<br><br>
+## Exection Trace Format
+
+The execution point of a single line which represents the state of computer's(abstract) memory notes the following details:<br>
+1.ordered_globals - List of global variables in the order the frontend should visualize them. <br>
+2.stdout - Any output to print in console <br>
+3.func_name - The function inside which the current line is executing . <br>
+4.stack_to_render<br>
+5.globals<br>
+6.heap<br>
+7.line - The line number about to execute .<br>
+8.event -  <br>
+
+<br>
 
 
 
