@@ -1,6 +1,6 @@
 
 # Python-Code-Dryrunner
-Get a step by step dryrun of your python code.
+
 Writing the dry run of a code manually is a tedious task especially for beginners in programming .<br> This project gives a dry run of the python code entered by user to analyse the changes occuring with the execution of each line. <br><br>
 
 1. Ace editor is integrated into the frontend for taking user input.<br>
