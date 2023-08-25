@@ -9,9 +9,11 @@ Writing the dry run of a code manually is a tedious task especially for beginner
 4. Program’s runtime state at every executed line is recorded and a JSON execution trace is sent back , which the frontend renders as the dry run.<br>
 
 ## Frontend :
-Frontend Files - index.html <br>style.css<br>
-front.js  - Sends the user input to backend and receives output trace .<br>
-visualize.js - Renders the trace as the dry run<br>
+Frontend Files <br>
+1.index.html <br>
+2.style.css<br>
+3.front.js  - Sends the user input to backend and receives output trace .<br>
+4.visualize.js - Renders the trace as the dry run<br>
 
 
 ## Backend: 
