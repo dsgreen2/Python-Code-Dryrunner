@@ -65,14 +65,14 @@ As the user's pgrogram is running , bdb will pause execution at every function c
 ## Exection Trace Format
 
 The execution point of a single line which represents the state of computer's(abstract) memory notes the following details:<br>
-1.ordered_globals - List of global variables in the order the frontend should visualize them. <br>
-2.stdout - Any output to print in console. <br>
-3.func_name - The function inside which the current line is executing . <br>
-4.stack_to_render - The current memory stack . Helps in rendering recursive functions .<br>
-5.globals- All the global variables . Helps in checking if a new variable is declared .<br>
-6.heap- Used for handling dynamic memory allocated <br>
-7.line - The line number about to execute .<br>
-8.event -  Can be a function call , function return , an exception or a single line statement(most common)<br>
+1. ordered_globals - List of global variables in the order the frontend should visualize them. <br>
+2. stdout - Any output to print in console. <br>
+3. func_name - The function inside which the current line is executing . <br>
+4. stack_to_render - The current memory stack . Helps in rendering recursive functions .<br>
+5. globals- All the global variables . Helps in checking if a new variable is declared .<br>
+6. heap- Used for handling dynamic memory allocated <br>
+7. line - The line number about to execute .<br>
+8. event -  Can be a function call , function return , an exception or a single line statement(most common)<br>
 
 <br>
 
